@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=/assets/Vighnesh_Sadvilkar_CV.pdf">
 <title>Vighnesh Sadvilkar - CV</title>
+<script>window.location.replace("/assets/Vighnesh_Sadvilkar_CV.pdf");</script>
 <style>
   body{
     margin:0;
@@ -13,31 +15,11 @@
     background:#FFFFE3;
     font-family:system-ui, sans-serif;
     color:#20242A;
-    text-align:center;
-    padding:20px;
   }
   a{color:#6D8196;}
 </style>
 </head>
 <body>
-  <p id="msg">Opening the CV. If nothing happens, <a href="/assets/Vighnesh_Sadvilkar_CV.pdf">click here</a>.</p>
-  <script>
-    var pdfUrl = "/assets/Vighnesh_Sadvilkar_CV.pdf";
-    var popup = null;
-    try {
-      popup = window.open(pdfUrl, "_blank");
-    } catch (e) {
-      popup = null;
-    }
-    var blocked = !popup || popup.closed || typeof popup.closed === "undefined";
-    if (blocked) {
-      // Popup blocked or failed: fall back to opening in this same tab.
-      window.location.replace(pdfUrl);
-    } else {
-      // Opened successfully in a new tab: leave this tab with a simple confirmation.
-      document.getElementById("msg").innerHTML =
-        'Opened the CV in a new tab. If you don\'t see it, <a href="' + pdfUrl + '">click here</a>.';
-    }
-  </script>
+  <p>Redirecting to the CV. If nothing happens, <a href="/assets/Vighnesh_Sadvilkar_CV.pdf">click here</a>.</p>
 </body>
 </html>
